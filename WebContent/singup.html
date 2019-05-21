@@ -55,45 +55,43 @@
 
 
 					<!-- Start Sign In Form -->
-					<form action="#" class="fh5co-form animate-box" data-animate-effect="fadeInLeft">
+					<form action="Reginster" method="post" class="fh5co-form animate-box" data-animate-effect="fadeInLeft" enctype="multipart/form-data">
 						<h2>注册</h2>
 						<div class="form-group">
 							<label for="photos" class="sr-only">Name</label>
 							<h5 >头像
-								<input type="file" class="form-control" id="photos" placeholder="头像" autocomplete="off">
+								<input type="file" class="form-control" id="photos" placeholder="头像" name="photos" autocomplete="off">
 							</h5>
 						</div>
 						<div class="form-group">
 							<label for="name" class="sr-only">Name</label>
-							<input type="text" class="form-control" id="name" placeholder="姓名" autocomplete="off">
+							<input type="text" class="form-control" id="name" placeholder="姓名" name="username" autocomplete="off">
 						</div>
 						<div class="form-group">
 							<label for="age" class="sr-only">Age</label>
-							<input type="email" class="form-control" id="age" placeholder="年龄" autocomplete="off">
+							<input type="text" class="form-control" id="age" placeholder="年龄"  name="age" autocomplete="off">
 						</div>
 						<div class="form-group">
 							<label for="major" class="sr-only">Major</label>
-							<input type="text" class="form-control" id="major" placeholder="职业" autocomplete="off">
+							<input type="text" class="form-control" id="major" placeholder="职业"  name="major" autocomplete="off">
 						</div>
 						<div class="form-group">
 							<label for="email" class="sr-only">Email</label>
-							<input type="email" class="form-control" id="email" placeholder="邮箱" autocomplete="off">
+							<input type="email" class="form-control" id="email" placeholder="邮箱"  name="email" autocomplete="off">
 						</div>
 						<div class="form-group">
 							<label for="password" class="sr-only">Password</label>
-							<input type="password" class="form-control" id="password" placeholder="密码" autocomplete="off">
+							<input type="password" class="form-control" id="password" placeholder="密码" name="password" autocomplete="off">
 						</div>
 						<div class="form-group">
 							<label for="re-password" class="sr-only">Re-type Password</label>
-							<input type="password" class="form-control" id="re-password" placeholder="重复密码" autocomplete="off">
+							<input type="password" class="form-control" id="re-password" placeholder="重复密码"  name="againpassword" autocomplete="off">
 						</div>
 						<div class="form-group">
-							<label for="infor" class="sr-only">Infor</label>
-							<textarea name="" id="infor" cols="30" rows="10" class="form-control" placeholder="自我介绍"></textarea>
+							<label for="infor" class="sr-only">information</label>
+							<input type="text"  id="infor"  class="form-control" name="information" placeholder="自我介绍"></input>
 						</div>
-						<div class="form-group">
-							<label for="remember"><input type="checkbox" id="remember"> 记住我</label>
-						</div>
+						
 						<div class="form-group">
 							<p>已有账号? <a href="./login.html">登录</a></p>
 						</div>
@@ -119,6 +117,7 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+	<script type="text/javascript" src="./js/reginster.js"></script>
 
 	</body>
 </html>

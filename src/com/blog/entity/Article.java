@@ -1,5 +1,6 @@
 package com.blog.entity;
 
+
 public class Article {
 	private long id;
 	private String name;
