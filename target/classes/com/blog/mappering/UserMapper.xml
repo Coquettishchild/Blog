@@ -12,7 +12,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</insert>
 	<!-- 获取用户 -->
 	<select id="getUser" resultType="user" parameterType="string">
-		select * from user where username = #{username}
+		select id,username,email,age,major,information,photos,password from user where username = #{username}
 	</select>
 	
 </mapper>

@@ -14,7 +14,6 @@ public class SendJson {
 		reponse.setCharacterEncoding("utf8");
 		JSONObject json = new JSONObject();
 		json.accumulate("data", re);
-		System.err.println(json.toString());
 		reponse.getWriter().print(json.toString());
 	}
 }

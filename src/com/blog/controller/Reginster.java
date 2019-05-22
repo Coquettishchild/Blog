@@ -57,11 +57,11 @@ public class Reginster extends HttpServlet {
 					user.add(value);
 				}else {
 					String filelast = fileItem.getName();
-					System.err.println(filelast);
 					int idex = filelast.lastIndexOf(".");
 					filelast=filelast.substring(idex+1);
 					loadfilename = GetUUID.getUUID();
-					WritePhotos.wirtephotos(fileItem, loadfilename+"."+filelast, url);
+					loadfilename+="."+filelast;
+					WritePhotos.wirtephotos(fileItem, loadfilename, url);
 				}
 			}
 			//判断用户名是否已经存在
