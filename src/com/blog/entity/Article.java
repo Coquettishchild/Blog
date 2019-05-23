@@ -1,11 +1,15 @@
 package com.blog.entity;
 
+import java.io.Serializable;
 
-public class Article {
+public class Article implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private long id;
 	private String name;
-	private int author;
-	private String judge;
+	private String author;
 	private String createtime;
 	private String content;
 	public long getId() {
@@ -20,17 +24,11 @@ public class Article {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getAuthor() {
+	public String getAuthor() {
 		return author;
 	}
-	public void setAuthor(int author) {
-		this.author = author;
-	}
-	public String getJudge() {
-		return judge;
-	}
-	public void setJudge(String judge) {
-		this.judge = judge;
+	public void setAuthor(String string) {
+		this.author = string;
 	}
 	public String getCreatetime() {
 		return createtime;
@@ -46,8 +44,8 @@ public class Article {
 	}
 	@Override
 	public String toString() {
-		return "Article [id=" + id + ", name=" + name + ", author=" + author + ", judge=" + judge + ", createtime="
-				+ createtime + ", content=" + content + "]";
+		return "Article [id=" + id + ", name=" + name + ", author=" + author + ", createtime=" + createtime
+				+ ", content=" + content + "]";
 	}
 	
 }

@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import net.sf.json.JSONObject;
+import net.sf.json.JsonConfig;
+import net.sf.json.util.CycleDetectionStrategy;
 
 
 public class JSONParase {
@@ -18,6 +20,7 @@ public class JSONParase {
 			sb.append(line);
 		}
 		bf.close();
+		System.out.println(sb.toString());
 		JSONObject json = JSONObject.fromObject(sb.toString());
 		return json;
 	}

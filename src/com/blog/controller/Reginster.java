@@ -57,6 +57,7 @@ public class Reginster extends HttpServlet {
 					user.add(value);
 				}else {
 					String filelast = fileItem.getName();
+					System.out.println(filelast);
 					int idex = filelast.lastIndexOf(".");
 					filelast=filelast.substring(idex+1);
 					loadfilename = GetUUID.getUUID();
