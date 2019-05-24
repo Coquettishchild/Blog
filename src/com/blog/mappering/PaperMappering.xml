@@ -6,4 +6,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<insert id="insertPaper" parameterType="article">
 		insert into article(name,author,content,createtime) values(#{name},#{author},#{content},#{createtime});
 	</insert>
+	<select id="getPapers" resultType="article" >
+		select id,name,author,createtime,content from article where author=#{author} limit #{begin},#{length}
+	</select>
 </mapper>

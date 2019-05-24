@@ -9,7 +9,6 @@
         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
         http://www.springframework.org/schema/context  
         http://www.springframework.org/schema/context/spring-context-4.0.xsd" >
-		
 		<!-- 加载配置文件 -->
 	<context:property-placeholder location="classpath:db.properties"/>
 	<!-- sqlSessionfactory -->
@@ -33,13 +32,13 @@
         <!-- 密码 -->
         <property name="password" value="${password}" />
         <!-- 当连接池中的连接耗尽的时候c3p0一次同时获取的连接数  -->
-        <property name="acquireIncrement" value="5"></property>
+        <property name="acquireIncrement" value="3"></property>
         <!-- 初始连接池大小 -->
         <property name="initialPoolSize" value="10"></property>
         <!-- 连接池中连接最小个数 -->
         <property name="minPoolSize" value="5"></property>
         <!-- 连接池中连接最大个数 -->
-        <property name="maxPoolSize" value="20"></property>
+        <property name="maxPoolSize" value="50"></property>
     </bean>
 	<!-- 自动扫描关系配置 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">

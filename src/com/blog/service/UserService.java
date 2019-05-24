@@ -28,7 +28,9 @@ public class UserService {
 		}
 		
 	}
-	
+	/*
+	 * 获取用户信息
+	 */
 	public User getUser(String username) {
 		try {
 			return dao.getUser(username);
@@ -38,4 +40,6 @@ public class UserService {
 			return null;
 		}
 	}
+	
+
 }
