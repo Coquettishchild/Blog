@@ -38,6 +38,21 @@ public class ArticleService {
 			return list;
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.err.println("获取文章列表失败");
+			return null;
+		}
+	}
+	
+	/*
+	 * 通过id获取文章名
+	 */
+	public Article getOnePaper(int id) {
+		try {
+			return service.getonepaper(id);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.err.println("通过id获取文章名失败");
 			return null;
 		}
 	}

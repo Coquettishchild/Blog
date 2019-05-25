@@ -57,10 +57,13 @@
 }
 
 span {
-	margin-left: 35%;
+	display: block;
+	clear: both;
+	margin-left: 30%;
 	font-size: 20px;
 	margin-top: 20px;
 	padding-bottom: 30px;
+	width: 65%;
 }
 </style>
 
@@ -74,7 +77,12 @@ span {
 			</div>
 			<form id="person" method="post" action="AddPaper">
 				<span> 文章名称：<input type="text" id="papaername"/>
-				</span> <input id="userinfo" name="userinfo" type="hidden" />
+				</span>
+				<span>
+					文章简介：<br>
+					<textarea name="" id="infor" cols="60" rows="10"></textarea>
+				</span>
+				<input id="userinfo" name="userinfo" type="hidden" />
 				<script id="myEditor" type="text/plain"
 					style="width: 75%; height: 256px;"></script>
 				<input type="submit" id="kh_button" onclick="save()"  class="savebut" value="保存"/>

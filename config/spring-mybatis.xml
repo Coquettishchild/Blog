@@ -39,6 +39,8 @@
         <property name="minPoolSize" value="5"></property>
         <!-- 连接池中连接最大个数 -->
         <property name="maxPoolSize" value="50"></property>
+        <!-- 连接有效时间 -->
+         <property name="checkoutTimeout" value="1000"/>  
     </bean>
 	<!-- 自动扫描关系配置 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">

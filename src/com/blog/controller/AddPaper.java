@@ -37,6 +37,7 @@ public class AddPaper extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			String papername = request.getParameter("papername");
 			String context = request.getParameter("context");
+			String infor = request.getParameter("infor");
 			response.setCharacterEncoding("utf8");
 			response.setContentType("text/html;charset=utf-8");
 			if(papername==null ||"".equals(papername)) {
@@ -45,6 +46,7 @@ public class AddPaper extends HttpServlet {
 				Article art =new Article();
 				art.setName(papername);
 				art.setContent(context);
+				art.setInfor(infor);
 				art.setCreatetime(GetThisTime.Gettime());
 				art.setAuthor(((User)request.getSession().getAttribute("user")).getUsername());
 				ApplicationContext applicationcontext = new ClassPathXmlApplicationContext("spring-mybatis.xml");

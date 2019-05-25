@@ -43,17 +43,18 @@ function getList(){
                     for(let i=0;i<json.data.obj.length;i++){
                         $('#blog').html($('#blog').html()+" <div class='blog-main'> " +
                             "<div class='heading-blog'> " +
-                            "<a href='singlepost.html' >"+json.data.obj[i].name+ "</a>" +
+                            "<a href='singlepost.html?id="+json.data.obj[i].id+"' class='more' >"+json.data.obj[i].name+ "</a>" +
                             "</div>" +
                             "<div class='blog-info'>" +
                             " <span class='label label-primary' >Posted on "+json.data.obj[i].createtime+"</span>" +
                             " <span class='label label-danger'>By "+json.data.obj[i].author+"</span>" +
                             " </div>" +
                             "<div class='blog-txt'>" +
-                            json.data.obj[i].content+
+                            json.data.obj[i].infor+
                             "</div>" +
                             "</div>")
                     }
+                   
                 }else{
                     index--;
                     alert("没有更多数据了")

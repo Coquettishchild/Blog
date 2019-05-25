@@ -12,6 +12,14 @@ public class Article implements Serializable{
 	private String author;
 	private String createtime;
 	private String content;
+	private String infor;
+	
+	public String getInfor() {
+		return infor;
+	}
+	public void setInfor(String infor) {
+		this.infor = infor;
+	}
 	public long getId() {
 		return id;
 	}

@@ -4,9 +4,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.blog.dao.ArticleDao">
 	<insert id="insertPaper" parameterType="article">
-		insert into article(name,author,content,createtime) values(#{name},#{author},#{content},#{createtime});
+		insert into article(name,author,content,createtime,infor) values(#{name},#{author},#{content},#{createtime},#{infor});
 	</insert>
 	<select id="getPapers" resultType="article" >
-		select id,name,author,createtime,content from article where author=#{author} limit #{begin},#{length}
+		select id,name,author,createtime,infor,content from article where author=#{author} limit #{begin},#{length}
+	</select>
+	<select id="getonepaper" resultType="article" parameterType="int">
+		select id,name,author,createtime,infor,content from article where id=#{id}
 	</select>
 </mapper>
