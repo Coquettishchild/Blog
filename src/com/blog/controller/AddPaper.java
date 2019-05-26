@@ -23,7 +23,7 @@ import net.sf.json.JSONObject;
 /**
  * 添加文章
  */
-@WebServlet("/AddPaper")
+@WebServlet("/AddPaper.action")
 public class AddPaper extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -39,9 +39,14 @@ public class AddPaper extends HttpServlet {
 			String context = request.getParameter("context");
 			String infor = request.getParameter("infor");
 			response.setCharacterEncoding("utf8");
+			Response re = new Response();
 			response.setContentType("text/html;charset=utf-8");
-			if(papername==null ||"".equals(papername)) {
-				response.getWriter().print("<script>alert('文章名称不能为空');window.location.href='./uedit.html';</script>");
+			if(request.getSession().getAttribute("user")!=null&&papername==null ||"".equals(papername)) {
+				re.setFlag(false);
+				re.setMessage("文章名不能空");
+			}else if(request.getSession().getAttribute("user")==null) {
+				re.setFlag(false);
+				re.setMessage("请先登录");
 			}else {
 				Article art =new Article();
 				art.setName(papername);
@@ -53,11 +58,14 @@ public class AddPaper extends HttpServlet {
 				ArticleService service = (ArticleService) applicationcontext.getBean("articleservice");
 				boolean b =service.insertpaper(art);
 				if(b) {
-					response.getWriter().print("<script>alert('提交成功');window.location.href='./index.html';</script>");
+					re.setFlag(true);
+					re.setMessage("添加成功");
 				}else {
-					response.getWriter().print("<script>alert('提交失败');window.location.href='./uedit.html';</script>");
+					re.setFlag(true);
+					re.setMessage("添加失败");
 				}
 			}
+			SendJson.sendJson(response, re);
 	}
 
 }

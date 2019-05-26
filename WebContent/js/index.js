@@ -1,14 +1,19 @@
 //获取用户信息
 $.ajax({
    type:'post',
-    url:'GetUser',
+    url:'GetUser.action',
    data:null,
     success:function (data) {
-        var json = JSON.parse(data);
-        $('#photos').attr('src',"./photos/"+json.data.obj.photos);
-        $('#name').html(json.data.obj.username);
-        $('#major').html(json.data.obj.major);
-        $('#infor').html(json.data.obj.information);
+	    try{
+	    	var json = JSON.parse(data);
+	        $('#photos').attr('src',"./photos/"+json.data.obj.photos);
+	        $('#name').html(json.data.obj.username);
+	        $('#major').html(json.data.obj.major);
+	        $('#infor').html(json.data.obj.information);    	
+	    }catch (e) {
+	    	alert("请先登录");
+	    	window.location.href="./login.html";
+	    }
     }
 });
 window.index=1;
@@ -31,7 +36,7 @@ function next(){
 function getList(){
     $.ajax({
         type:'post',
-        url: 'GetPapers',
+        url: 'GetPapers.action',
         data: {
             "index":index
         },

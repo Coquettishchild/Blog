@@ -3,25 +3,29 @@ try {
     var paraString = url.substring(url.indexOf("=") + 1, url.length);
 } catch (e) {
     alert("没有此问卷");
-    window.location.href = "../index.html";
+    window.location.href = "./index.html";
 }
-//获取用户信息
 $.ajax({
-    type:'post',
-    url:'GetUser',
-    data:null,
-    success:function (data) {
-        var json = JSON.parse(data);
-        $('#photos').attr('src',"./photos/"+json.data.obj.photos);
-        $('#name').html(json.data.obj.username);
-        $('#major').html(json.data.obj.major);
-        $('#infor').html(json.data.obj.information);
-    }
-});
+	   type:'post',
+	    url:'GetUser.action',
+	   data:null,
+	    success:function (data) {
+		    try{
+		    	var json = JSON.parse(data);
+		        $('#photos').attr('src',"./photos/"+json.data.obj.photos);
+		        $('#name').html(json.data.obj.username);
+		        $('#major').html(json.data.obj.major);
+		        $('#infor').html(json.data.obj.information);    	
+		    }catch (e) {
+		    	alert("请先登录");
+		    	window.location.href="./login.html";
+		    }
+	    }
+	});
 
 $.ajax({
     type:'post',
-    url: 'GetonePaper',
+    url: 'GetonePaper.action',
     data: {
         "id":paraString
     },

@@ -13,7 +13,7 @@ import com.blog.util.SendJson;
 /*
  * 获取用户信息
  */
-@WebServlet("/GetUser")
+@WebServlet("/GetUser.action")
 public class GetUser extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     public GetUser() {

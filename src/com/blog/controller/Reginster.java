@@ -29,7 +29,7 @@ import com.blog.util.WritePhotos;
  * 用户注册
  */
 
-@WebServlet("/Reginster")
+@WebServlet("/Reginster.action")
 public class Reginster extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     

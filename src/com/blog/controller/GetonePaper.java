@@ -18,7 +18,7 @@ import com.blog.util.SendJson;
 /**
  * 获取一个文章的详情
  */
-@WebServlet("/GetonePaper")
+@WebServlet("/GetonePaper.action")
 public class GetonePaper extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

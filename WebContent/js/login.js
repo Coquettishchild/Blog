@@ -9,7 +9,7 @@ btn.click(
         
         $.ajax({
             type:'post',
-            url:'Login',
+            url:'Login.action',
             contentType:"application/json;charset=utf8",
             dataType:'json',
             data:JSON.stringify(user),

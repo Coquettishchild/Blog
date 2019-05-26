@@ -22,7 +22,7 @@ import net.sf.json.JSONObject;
 /**
  *用户登录
  */
-@WebServlet("/Login")
+@WebServlet("/Login.action")
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

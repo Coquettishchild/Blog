@@ -13,12 +13,6 @@ import javax.servlet.annotation.WebFilter;
  */
 @WebFilter(filterName = "/EncodingFifter",urlPatterns = "/")
 public class EncodingFifter implements Filter {
-    public EncodingFifter() {
-        // TODO Auto-generated constructor stub
-    }
-
-	public void destroy() {
-	}
 
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		request.setCharacterEncoding("utf8");
@@ -26,11 +20,5 @@ public class EncodingFifter implements Filter {
 		chain.doFilter(request, response);
 	}
 
-	/**
-	 * @see Filter#init(FilterConfig)
-	 */
-	public void init(FilterConfig fConfig) throws ServletException {
-		// TODO Auto-generated method stub
-	}
 
 }

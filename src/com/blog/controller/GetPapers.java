@@ -21,7 +21,7 @@ import com.blog.util.SendJson;
 /**
  *获取用户的博客列表
  */
-@WebServlet("/GetPapers")
+@WebServlet("/GetPapers.action")
 public class GetPapers extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
