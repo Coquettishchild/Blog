@@ -1,0 +1,3 @@
+本系统为个人博客管理系统
+采用servlet+spring+mybatis+ajax，富文本编辑器uedeit
+有很多地方不晚上，还需改进
