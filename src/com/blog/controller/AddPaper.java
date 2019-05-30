@@ -9,11 +9,13 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import com.blog.entity.Article;
 import com.blog.entity.Response;
 import com.blog.entity.User;
 import com.blog.service.ArticleService;
+import com.blog.util.GetClass;
 import com.blog.util.GetThisTime;
 import com.blog.util.JSONParase;
 import com.blog.util.SendJson;
@@ -54,8 +56,8 @@ public class AddPaper extends HttpServlet {
 				art.setInfor(infor);
 				art.setCreatetime(GetThisTime.Gettime());
 				art.setAuthor(((User)request.getSession().getAttribute("user")).getUsername());
-				ApplicationContext applicationcontext = new ClassPathXmlApplicationContext("spring-mybatis.xml");
-				ArticleService service = (ArticleService) applicationcontext.getBean("articleservice");
+				ApplicationContext appcontext = WebApplicationContextUtils.getWebApplicationContext(getServletContext());
+				ArticleService service = (ArticleService) appcontext.getBean("articleservice");
 				boolean b =service.insertpaper(art);
 				if(b) {
 					re.setFlag(true);

@@ -18,10 +18,12 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import com.blog.entity.Response;
 import com.blog.entity.User;
 import com.blog.service.UserService;
+import com.blog.util.GetClass;
 import com.blog.util.GetUUID;
 import com.blog.util.SendJson;
 import com.blog.util.WritePhotos;
@@ -66,8 +68,8 @@ public class Reginster extends HttpServlet {
 				}
 			}
 			//判断用户名是否已经存在
-			ApplicationContext context = new ClassPathXmlApplicationContext("spring-mybatis.xml");
-			UserService service=(UserService) context.getBean("userservice");
+			ApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(getServletContext());
+			UserService service = (UserService) context.getBean("userservice");
 			if(service.getUser(user.get(0))==null) {
 				User newuser = new User();
 				newuser.setUsername(user.get(0));

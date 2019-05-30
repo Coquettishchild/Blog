@@ -10,10 +10,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import com.blog.entity.Response;
 import com.blog.entity.User;
 import com.blog.service.UserService;
+import com.blog.util.GetClass;
 import com.blog.util.JSONParase;
 import com.blog.util.SendJson;
 
@@ -36,12 +38,12 @@ public class Login extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
-			ApplicationContext context = new ClassPathXmlApplicationContext("spring-mybatis.xml");
-			UserService service=(UserService) context.getBean("userservice");
+			ApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(getServletContext());
+			UserService userService = (UserService) context.getBean("userservice");
 			JSONObject json = JSONParase.paraseJson(request, response);
 			String username=json.getString("username");
 			String password=json.getString("password");
-			User user =service.getUser(username);
+			User user =userService.getUser(username);
 			Response re = new Response();
 			if(user!=null && password!=null&&password.equals(user.getPassword())) {
 				re.setFlag(true);

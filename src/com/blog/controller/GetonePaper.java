@@ -9,10 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import com.blog.entity.Article;
 import com.blog.entity.Response;
 import com.blog.service.ArticleService;
+import com.blog.util.GetClass;
 import com.blog.util.SendJson;
 
 /**
@@ -32,8 +34,9 @@ public class GetonePaper extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String str =request.getParameter("id");
 		int id =Integer.parseInt(str);
-		ApplicationContext contxt = new ClassPathXmlApplicationContext("spring-mybatis.xml");
-		ArticleService art = (ArticleService) contxt.getBean("articleservice");
+		ApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(getServletContext());
+		ArticleService art = (ArticleService) context.getBean("articleservice");
+		System.out.println(art);
 		Article article =art.getOnePaper(id);
 		Response re =new Response();
 		re.setFlag(true);

@@ -9,10 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import com.blog.entity.Article;
 import com.blog.entity.Response;
 import com.blog.service.ArticleService;
+import com.blog.util.GetClass;
 import com.blog.util.SendJson;
 
 /**
@@ -39,8 +41,8 @@ public class UpdataPaper extends HttpServlet {
 			art.setContent(context);
 			art.setInfor(infor);
 			art.setName(name);
-			ApplicationContext contxt = new ClassPathXmlApplicationContext("spring-mybatis.xml");
-			ArticleService arts = (ArticleService) contxt.getBean("articleservice");
+			ApplicationContext appcontext = WebApplicationContextUtils.getWebApplicationContext(getServletContext());
+			ArticleService arts = (ArticleService) appcontext.getBean("articleservice");
 			boolean  flag =arts.updataArticle(art);
 			Response re = new Response();
 			re.setFlag(flag);

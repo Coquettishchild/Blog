@@ -9,9 +9,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import com.blog.entity.Response;
 import com.blog.service.ArticleService;
+import com.blog.util.GetClass;
 import com.blog.util.SendJson;
 
 /**
@@ -34,8 +36,8 @@ public class DeleteArticle extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String msg = request.getParameter("id");
 		long id = Long.parseLong(msg);
-		ApplicationContext applicationcontext = new ClassPathXmlApplicationContext("spring-mybatis.xml");
-		ArticleService service = (ArticleService) applicationcontext.getBean("articleservice");
+		ApplicationContext appcontext = WebApplicationContextUtils.getWebApplicationContext(getServletContext());
+		ArticleService service = (ArticleService) appcontext.getBean("articleservice");
 		boolean flag=service.deleteArticle(id);
 		Response re = new Response();
 		re.setFlag(flag);
