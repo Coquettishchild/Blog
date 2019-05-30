@@ -16,9 +16,9 @@ $.ajax({
 			var json = JSON.parse(data);
 			console.log(json);
 			if (json.data.flag){
-				document.getElementById("papaername").value=json.data.name;
-				$('#papaername').val(json.data.name);
-				$('#infor').text(json.data.infor);
+				$('#papaername').val(json.data.obj.name);
+				$('#infor').text(json.data.obj.infor);
+				UE.getEditor('myEditor').setContent(json.data.obj.content);
 			}
 		}catch (e) {
 			console.log(e);
