@@ -1,5 +1,6 @@
 package com.blog.dao;
 
+import com.blog.entity.Article;
 import com.blog.entity.User;
 
 public interface UserDao {
@@ -7,4 +8,5 @@ public interface UserDao {
 	User getUser(String username) throws Exception;
 	//注册
 	void insertUser(User user) throws Exception;
+	
 }

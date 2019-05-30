@@ -2,7 +2,7 @@ var url = location.href;
 try {
     var paraString = url.substring(url.indexOf("=") + 1, url.length);
 } catch (e) {
-    alert("没有此问卷");
+    alert("没有此文章");
     window.location.href = "./index.html";
 }
 $.ajax({
@@ -15,7 +15,7 @@ $.ajax({
 		        $('#photos').attr('src',"./photos/"+json.data.obj.photos);
 		        $('#name').html(json.data.obj.username);
 		        $('#major').html(json.data.obj.major);
-		        $('#infor').html(json.data.obj.information);    	
+		        $('#infor').html(json.data.obj.information);
 		    }catch (e) {
 		    	alert("请先登录");
 		    	window.location.href="./login.html";

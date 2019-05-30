@@ -56,4 +56,31 @@ public class ArticleService {
 			return null;
 		}
 	}
+	/*
+	 * 通过id修改文章
+	 */
+	public boolean updataArticle(Article art) {
+		try {
+			service.updataPaper(art);
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.err.println("更新失败");
+			return false;
+		}
+	}
+	
+	/*
+	 * 通过id删除文章
+	 */
+	public boolean deleteArticle(long id) {
+		try {
+			service.deletePaper(id);
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.err.println("删除文章失败");
+			return false;
+		}
+	}
 }

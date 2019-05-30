@@ -12,4 +12,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="getonepaper" resultType="article" parameterType="int">
 		select id,name,author,createtime,infor,content from article where id=#{id}
 	</select>
+	<update id="updataPaper" parameterType="article">
+		update  article set name=#{name},content=#{content},infor=#{infor} where id =#{id}
+	</update>
+	<delete id="deletePaper" parameterType="long">
+		delete from article where id=#{id}
+	</delete>
 </mapper>
