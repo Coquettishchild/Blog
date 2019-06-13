@@ -2,19 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c7622b6-1b9e-49f4-ba90-d65e5f30808e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebContent/js/updata.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/updata.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/css/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/css/style2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/js/more.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/js/more.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/singlepost.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/singlepost.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/uedit.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/uedit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/updata.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/updata.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sqlmapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/sqlmapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/blog/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/blog/dao/ArticleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/blog/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/blog/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/blog/mappering/PaperMappering.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/blog/mappering/PaperMappering.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/blog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/blog/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/controller/AddPaper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/controller/AddPaper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/controller/DeleteArticle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/controller/DeleteArticle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/controller/GetPapers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/controller/GetPapers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/controller/GetonePaper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/controller/GetonePaper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/controller/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/controller/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/controller/Reginster.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/controller/Reginster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/controller/UpdataPaper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/controller/UpdataPaper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/blog/dao/ArticleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/dao/ArticleDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/blog/mappering/PaperMappering.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/mappering/PaperMappering.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/blog/service/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/service/ArticleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sqlmapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sqlmapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/Blog/Blog/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/Blog/Blog/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,62 +46,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/singlepost.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2640">
-              <caret line="88" column="47" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
+            <state relative-caret-position="270">
+              <caret line="48" column="57" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="48" selection-end-column="57" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/login.html">
+        <entry file="file://$PROJECT_DIR$/WebContent/css/style2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2490">
-              <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/js/more.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1470">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="543">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebContent/js/more.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1590">
+              <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="769">
-              <caret line="93" column="16" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/js/updata.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="753">
-              <caret line="54" column="10" lean-forward="true" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/updata.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="92" column="50" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
+            <state relative-caret-position="1467">
+              <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -108,15 +100,15 @@
       <list>
         <option value="$PROJECT_DIR$/WebContent/login.html" />
         <option value="$PROJECT_DIR$/WebContent/js/login.js" />
-        <option value="$PROJECT_DIR$/WebContent/css/style2.css" />
         <option value="$PROJECT_DIR$/WebContent/uedit.html" />
-        <option value="$PROJECT_DIR$/WebContent/singlepost.html" />
         <option value="$PROJECT_DIR$/WebContent/index.html" />
         <option value="$PROJECT_DIR$/WebContent/updata.html" />
-        <option value="$PROJECT_DIR$/WebContent/js/more.js" />
         <option value="$PROJECT_DIR$/WebContent/js/uedit.js" />
         <option value="$PROJECT_DIR$/WebContent/js/updata.js" />
         <option value="$PROJECT_DIR$/WebContent/js/index.js" />
+        <option value="$PROJECT_DIR$/WebContent/css/style2.css" />
+        <option value="$PROJECT_DIR$/WebContent/singlepost.html" />
+        <option value="$PROJECT_DIR$/WebContent/js/more.js" />
       </list>
     </option>
   </component>
@@ -134,46 +126,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="Blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
@@ -203,7 +162,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,7 +169,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -270,11 +228,12 @@
       <workItem from="1558683892642" duration="5207000" />
       <workItem from="1558759700666" duration="2842000" />
       <workItem from="1559134431293" duration="7480000" />
+      <workItem from="1560422091612" duration="5748000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27642000" />
+    <option name="totallyTimeSpent" value="33390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -339,13 +298,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/js/ueditor.js" />
-    <entry file="file://$PROJECT_DIR$/WebContent/css/style2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-381">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/ueditor/jsp/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -381,10 +333,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/singlepost.html">
+    <entry file="file://$PROJECT_DIR$/WebContent/js/uedit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2640">
-          <caret line="88" column="47" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
+        <state relative-caret-position="330">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -395,45 +347,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/index.html">
+    <entry file="file://$PROJECT_DIR$/WebContent/js/updata.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/js/more.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/js/uedit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="1620">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/updata.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
+        <state relative-caret-position="2760">
           <caret line="92" column="50" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/js/updata.js">
+    <entry file="file://$PROJECT_DIR$/WebContent/css/style2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="54" column="10" lean-forward="true" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+        <state relative-caret-position="543">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="117" column="47" lean-forward="true" selection-start-line="117" selection-start-column="47" selection-end-line="117" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="93" column="16" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+        <state relative-caret-position="1467">
+          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/singlepost.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="48" column="57" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="48" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/js/more.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
         </state>
       </provider>
     </entry>

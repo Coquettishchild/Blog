@@ -21,7 +21,25 @@ $.ajax({
 		    	window.location.href="./login.html";
 		    }
 	    }
-	});
+})
+
+    function add() {
+        var comment = $('#comment').text();
+        $.ajax({
+            type:'post',
+            url:'AddComments.action',
+            data:{
+                "messid":paraString,
+                "comment":comment
+            },
+            success:function (data) {
+                var json = JSON.parse(data);
+                alert(json.data.message);
+                window.location.reload();
+            }
+            }
+        )
+    }
 
 $.ajax({
     type:'post',
@@ -46,13 +64,32 @@ $.ajax({
                         json.data.obj.content+
                         "</div>" +
                         "</div>")
-                }
-
-            }else{
-                index--;
-                alert("没有更多数据了")
+                } else{
+                alert("发生错误");
             }
-
         }
-    });
+    }
+});
+setTimeout(getcomment,200);
+function getcomment() {
+    $.ajax(
+        {
+            type:'post',
+            url: 'GetComment.action',
+            data: {
+                "id":paraString
+            },
+            success:function(data){
+            var json = JSON.parse(data);
+            for(let i=0;i<json.data.obj.length;i++){
+                $('#blog').html($('#blog').html()+"<p>"+json.data.obj[i].name+":"+json.data.obj[i].message+"</p>");
+
+            }
+            $('#blog').html($('#blog').html()+" <textarea id=\"comment\"   cols=\"80\" rows=\"4\"></textarea>\n" +
+                "                    <button onclick=\"add()\">发表评论</button>");
+            }
+        }
+    );
+}
+
 

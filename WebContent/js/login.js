@@ -16,7 +16,7 @@ btn.click(
             success:function (data) {
             	console.log(data);
                 if(data.data.flag){
-                    window.location.href="../Blog/index.html";
+                    window.location.href="../Blog/main.html";
                 }else{
                     alert(data.data.message);
                 }

@@ -71,4 +71,7 @@ function getList(){
         }
     });
 }
+function up(id){
+    window.location.href="./updata.html?id="+id;
+}
 

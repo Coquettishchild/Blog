@@ -18,4 +18,15 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<delete id="deletePaper" parameterType="long">
 		delete from article where id=#{id}
 	</delete>
+	
+	<select id="getall" resultType="article" parameterType="int">
+		select id,name,author,createtime,infor,content from article  limit #{begin},#{length}
+	</select>
+	
+	<insert id="insertCommnet" parameterType="comment">
+		insert into comments(name,message,messid) values(#{name},#{message},#{messid});
+	</insert>
+	<select id="getComment" parameterType="int" resultType="comment">
+		select name,message from comments where messid = #{messid}
+	</select>
 </mapper>

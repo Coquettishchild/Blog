@@ -11,6 +11,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	<typeAliases>
 		<typeAlias type="com.blog.entity.User" alias="user"/>
 		<typeAlias type="com.blog.entity.Article" alias="article"/>
+		<typeAlias type="com.blog.entity.Comments" alias="comment"/>
 	</typeAliases>
 	
 </configuration>
