@@ -24,7 +24,7 @@ $.ajax({
 })
 
     function add() {
-        var comment = $('#comment').text();
+        var comment = $('#comment').val();
         $.ajax({
             type:'post',
             url:'AddComments.action',
