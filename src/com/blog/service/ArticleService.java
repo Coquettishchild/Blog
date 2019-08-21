@@ -90,7 +90,7 @@ public class ArticleService {
 	 * 获取所有文章
 	 */
 	public List<Article> getall(int index) {
-		int begin, length = 3;
+		int begin, length = 5;
 		begin = index * length - length;
 		try {
 			List<Article> list = service.getall(begin, length);
